@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aisha Masri | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@300;500&family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <div class="custom-cursor"></div>
+
+  <body>
+    <section class="hero">
+      <button class="theme-toggle" id="themeToggle">🌙</button>
+
+      <span class="portfolio-word">Portfolio</span>
+      <h1>Graphic Designer<br />& Video Editing</h1>
+      <p class="name">Aisha Masri</p>
+      <div class="images">
+        <img src="aa.png" class="girl" />
+      </div>
+
+      <div class="shapes">
+        <div class="circle"></div>
+        <div class="dot"></div>
+        <div class="star">✦</div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="projects">
+      <h2>My Projects</h2>
+
+      <div class="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="social">Social Media</button>
+        <button data-filter="training">Training</button>
+        <button data-filter="ui">UI / UX</button>
+        <button data-filter="video">Video Editing</button>
+      </div>
+
+      <div class="project-grid">
+        <!-- ui -->
+        <div class="project-card ui" data-title="UI Design">
+          <img src="11.png" alt="UI Design" />
+        </div>
+        <div class="project-card ui" data-title="UI Design">
+          <img src="12.png" alt="UI Design" />
+        </div>
+        <div class="project-card ui" data-title="UI Design">
+          <img src="13.png" alt="UI Design" />
+        </div>
+        <!-- training -->
+        <div class="project-card training" data-title="Training Design">
+          <a href="GUIDELINES BACHIR ICE CREAM-1 (1).pdf" target="_blank">
+            <img src="ss.png" alt="Project Design" />
+            <div class="project-overlay">Brand Identity Design</div>
+          </a>
+        </div>
+        <!-- social -->
+        <div class="project-card social" data-title="Instagram Post">
+          <img src="1.png" alt="Instagram Post" />
+        </div>
+        <div class="project-card social" data-title="Instagram Post">
+          <img src="2.png" alt="Instagram Post" />
+        </div>
+        <div class="project-card social" data-title="Instagram Post">
+          <img src="3.png" alt="Instagram Post" />
+        </div>
+        <div class="project-card social" data-title="Instagram Post">
+          <img src="4.png" alt="Instagram Post" />
+        </div>
+        <div class="project-card social" data-title="Instagram Post">
+          <img src="5.png" alt="Instagram Post" />
+        </div>
+        <div class="project-card social" data-title="Instagram Post">
+          <img src="6.png" alt="Instagram Post" />
+        </div>
+
+        <div class="project-card video" data-title="Video Editing">
+          <video src="video.mp4" alt="video editing"></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>My Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span>🎨</span>
+          <h3>Design</h3>
+        </div>
+
+        <div class="skill-card">
+          <span>🎬</span>
+          <h3>Video Editing</h3>
+        </div>
+
+        <div class="skill-card">
+          <span>🎤</span>
+          <h3>Voice Over</h3>
+        </div>
+
+        <div class="skill-card">
+          <span>💬</span>
+          <h3>Communication</h3>
+        </div>
+
+        <div class="skill-card">
+          <span>📐</span>
+          <h3>UI</h3>
+        </div>
+
+        <div class="skill-card">
+          <span>🖌️</span>
+          <h3>Logos</h3>
+        </div>
+
+        <div class="skill-card">
+          <span>🖼️</span>
+          <h3>Visual Identity</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- popup -->
+    <div class="popup" id="popup">
+      <span class="close">&times;</span>
+      <div class="popup-content">
+        <h3 id="popup-title"></h3>
+        <img id="popup-img" style="display: none" />
+        <video id="popup-video" controls style="display: none"></video>
+      </div>
+    </div>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2 class="Section">Contact Me</h2>
+      <form
+        action="https://formspree.io/f/meejnqwr"
+        method="POST"
+        class="contact-form"
+      >
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/aicha_massri?igsh=Y3F1c2QwYjE3ZHBx"
+          ><i class="fab fa-instagram fa-2x"></i
+        ></a>
+        <a href="https://www.behance.net/aishamasri1"
+          ><i class="fab fa-behance fa-2x"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/aisha-masri-abedelnasser"
+          ><i class="fab fa-linkedin fa-2x"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>Asmaa Adass | All Rights Reserved</footer>
+    <!-- js -->
+
+    <script>
+      const buttons = document.querySelectorAll(".filters button");
+      const cards = document.querySelectorAll(".project-card");
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          buttons.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const filter = btn.dataset.filter;
+
+          cards.forEach((card) => {
+            card.style.display =
+              filter === "all" || card.classList.contains(filter)
+                ? "block"
+                : "none";
+          });
+        });
+      });
+      const skillCards = document.querySelectorAll(".skill-card");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      skillCards.forEach((card) => observer.observe(card));
+      //
+
+      const cursor = document.querySelector(".custom-cursor");
+
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+      });
+      //
+
+      const sections = document.querySelectorAll("section");
+
+      const secObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      sections.forEach((sec) => secObserver.observe(sec));
+      //
+
+      const toggle = document.getElementById("themeToggle");
+
+      toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+
+        toggle.innerText = document.body.classList.contains("dark")
+          ? "☀️"
+          : "🌙";
+
+        localStorage.setItem(
+          "theme",
+          document.body.classList.contains("dark") ? "dark" : "light"
+        );
+      });
+
+      /* حفظ الوضع */
+      if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark");
+        toggle.innerText = "☀️";
+      }
+      //
+
+      //
+
+      const popup = document.getElementById("popup");
+      const popupTitle = document.getElementById("popup-title");
+      const popupImg = document.getElementById("popup-img");
+      const popupVideo = document.getElementById("popup-video");
+      const closeBtn = document.querySelector(".close");
+
+      document.querySelectorAll(".project-card").forEach((card) => {
+        card.onclick = () => {
+          popup.style.display = "flex";
+          popupTitle.innerText = card.dataset.title;
+
+          const img = card.querySelector("img");
+          const video = card.querySelector("video");
+
+          if (img) {
+            popupImg.src = img.src;
+            popupImg.style.display = "block";
+            popupVideo.style.display = "none";
+            popupVideo.pause();
+          } else if (video) {
+            popupVideo.src = video.src;
+            popupVideo.style.display = "block";
+            popupImg.style.display = "none";
+            popupVideo.play();
+          }
+        };
+      });
+
+      closeBtn.onclick = () => {
+        popup.style.display = "none";
+        popupVideo.pause();
+      };
+    </script>
+  </body>
+</html>
