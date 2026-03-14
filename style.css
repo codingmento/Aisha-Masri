@@ -232,7 +232,7 @@ h1 {
 /* projects */
 
 .projects {
-    padding: 50px 10%;
+    padding: 20px 10%;
 }
 
 .projects h2 {
@@ -452,10 +452,20 @@ footer {
 
 /* media queries */
 /* 📱 Mobile */
-@media (max-width: 768px) {
+@media(max-width:950px) {
+    .images {
+        right: 0;
+    }
+}
+
+@media(max-width:850px) {
     .images {
         display: none;
     }
+}
+
+@media (max-width: 768px) {
+
 
     .hero {
         padding: 40px 20px;
@@ -486,12 +496,7 @@ footer {
     }
 
     .project-card {
-        margin-left: 40px;
-        margin-right: 40px;
-        padding: 0;
-        /* إزالة البادينغ نهائياً */
-        height: auto;
-        /* بحيث يتناسب مع المحتوى */
+        margin: 0 auto;
     }
 
     .project-card img,
